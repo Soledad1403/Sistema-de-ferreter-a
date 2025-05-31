@@ -1,0 +1,207 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif; /* Fuente moderna y legible */
+    background: url('fondo2.jpg') no-repeat center center fixed; /* Imagen de fondo para toda la página */
+    background-size: cover; /* Asegura que la imagen de fondo cubra toda la pantalla */
+    color: #ffffff; /* Color de texto principal blanco */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa al menos el 100% de la altura de la ventana */
+}
+
+/* --- Estilos del encabezado (Header) --- */
+header {
+    background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0, 0, 0, 0.815) 100%); /* Gradiente oscuro transparente */
+    padding: 20px 30px; /* Espaciado interno */
+    box-shadow: 0px 4px 15px rgba(255, 140, 0, 0.7); /* Sombra naranja sutil */
+    display: flex; /* Para alinear el logo/título y la navegación */
+    justify-content: space-between; /* Empuja el branding a la izquierda y la nav a la derecha */
+    align-items: center; /* Centra verticalmente los elementos */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque suave */
+    -webkit-backdrop-filter: blur(5px); /* Compatibilidad con Safari */
+}
+
+.header-branding {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre el logo y el título */
+}
+
+.logo {
+    height: 60px; /* Tamaño del logo */
+    width: auto; /* Mantiene la proporción de aspecto */
+    object-fit: contain; /* Asegura que el logo se ajuste sin distorsionarse */
+    border-radius: 8px; /* Bordes ligeramente redondeados para el logo */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4); /* Sombra blanca luminosa alrededor del logo */
+}
+
+header h1 {
+    font-size: 42px; /* Tamaño del título principal */
+    color: #ff9102; /* Color naranja fuerte */
+    text-shadow: 4px 4px 18px rgba(255, 255, 255, 1); /* Sombra blanca fuerte para efecto de brillo */
+    font-weight: bold;
+    margin: 0; /* Elimina el margen predeterminado para una mejor alineación */
+    white-space: nowrap; /* Evita que el título se rompa en varias líneas */
+}
+
+/* --- Menú de navegación (Nav) --- */
+nav ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Para que los ítems del menú estén en línea */
+    gap: 25px; /* Espacio entre cada elemento del menú */
+}
+
+nav ul li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #ff8c00; /* Naranja para los enlaces */
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 12px; /* Espaciado interno para el hover */
+    border-radius: 5px; /* Bordes suaves para el efecto hover */
+    transition: all 0.3s ease; /* Transición suave para todos los cambios */
+}
+
+nav ul li a:hover {
+    color: #ffffff; /* Texto blanco al pasar el mouse */
+    background-color: rgba(255, 140, 0, 0.2); /* Fondo naranja transparente al pasar el mouse */
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Sombra blanca brillante para el texto */
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.5); /* Sombra naranja suave alrededor del enlace */
+}
+
+/* --- Contenido principal (Main) --- */
+main {
+    flex: 1; /* Permite que el contenido principal ocupe el espacio disponible, empujando el footer hacia abajo */
+    padding: 40px 20px; /* Espaciado para el contenido */
+    max-width: 1200px; /* Ancho máximo para el contenido */
+    margin: 30px auto; /* Centra el contenido en la página */
+    background: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para el contenido principal */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 0 30px rgba(255, 140, 0, 0.6); /* Sombra naranja grande para el main */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+    display: flex; /* Para centrar el párrafo de ejemplo */
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Altura mínima para el main, si no hay mucho contenido */
+}
+
+main p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #f0f0f0; /* Color de texto ligeramente gris */
+    text-align: center;
+    max-width: 800px; /* Ancho máximo para el párrafo */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Sombra suave para el texto */
+}
+
+/* --- Pie de página (Footer) --- */
+footer {
+    background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0, 0, 0, 0.815) 100%); /* Mismo gradiente que el header */
+    color: #fff;
+    padding: 25px 30px;
+    margin-top: 50px; /* Espacio superior para separar del contenido principal */
+    box-shadow: 0 -4px 15px rgba(255, 140, 0, 0.7); /* Sombra naranja hacia arriba */
+    text-align: center;
+    border-top: 1px solid rgba(255, 140, 0, 0.3); /* Borde superior naranja sutil */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+    -webkit-backdrop-filter: blur(5px); /* Compatibilidad con Safari */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espacio entre los elementos del footer */
+}
+
+footer p {
+    margin: 0;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8); /* Texto del footer ligeramente transparente */
+}
+
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #ff8c00; /* Naranja para los enlaces sociales */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 140, 0, 0.8); /* Sombra naranja brillante al pasar el mouse */
+}
+
+/* --- Responsive Design (Adaptación a diferentes tamaños de pantalla) --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Apila elementos verticalmente en pantallas pequeñas */
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .header-branding {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .logo {
+        height: 50px; /* Logo más pequeño en móviles */
+    }
+
+    header h1 {
+        font-size: 32px; /* Título más pequeño en móviles */
+    }
+
+    nav {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Permite que los ítems de navegación se envuelvan */
+        justify-content: center;
+        gap: 10px;
+    }
+
+    main {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 20px 15px;
+    }
+
+    .footer-content {
+        gap: 8px;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
