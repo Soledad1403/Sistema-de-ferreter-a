@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario - Ferretería Stalyn</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <header>
+        <img src="ferretero.jpg" alt="Ferretería Stalyn Logo" class="logo">
+        <h1>Ferretería Stalyn</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="inventario.html">Inventario</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+                <li><a href="reclamos.html">Reclamos</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main>
+        <section id="inventario">
+
+            <h3>🛠️ Herramientas</h3>
+            <div class="producto">
+                <p>🔩 Taladro Industrial - <strong>S/. 100.00</strong></p>
+                <a href="taladro industrial.jpg" target="_blank">📄 Ficha Técnica</a>
+                <button class="add-to-cart-btn" data-name="Taladro Industrial" data-price="100" data-image="taladro industrial.jpg">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <p>🔨 Martillo Profesional - <strong>S/. 25.00</strong></p>
+                <a href="martillo profesional.jpg" target="_blank">📄 Ficha Técnica</a>
+                <button class="add-to-cart-btn" data-name="Martillo Profesional" data-price="25" data-image="martillo profesional.jpg">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <p>🪛 Destornillador Multiuso - <strong>S/. 15.00</strong></p>
+                <a href="destornillador multiuso.jpg" target="_blank">📄 Ficha Técnica</a>
+                <button class="add-to-cart-btn" data-name="Destornillador Multiuso" data-price="15" data-image="destornillador multiuso.jpg">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <p>🗜️ Llaves Ajustables - <strong>S/. 30.00</strong></p>
+                <a href="llaves ajustables.jpg" target="_blank">📄 Ficha Técnica</a>
+                <button class="add-to-cart-btn" data-name="Llaves Ajustables" data-price="30" data-image="llaves ajustables.jpg">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <p>🦯 Sierra de Mano - <strong>S/. 45.00</strong></p>
+                <a href="sierra.jpg" target="_blank">📄 Ficha Técnica</a>
+                <button class="add-to-cart-btn" data-name="Sierra de Mano" data-price="45" data-image="sierra.jpg">Agregar al Carrito</button>
+            </div>
+
+            <h3>📦 Materiales</h3>
+            <div class="producto">
+                <p>🧱 Cemento Portland - <strong>S/. 12.00</strong></p>
+                <a href="cemento.jpg" target="_blank">📄 Ficha Técnica</a>
+                <button class="add-to-cart-btn" data-name="Cemento Portland" data-price="12" data-image="cemento.jpg">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <p>⚙️ Clavos de Acero (Paquete) - <strong>S/. 8.00</strong></p>
+                <a href="clavos.jpg" target="_blank">📄 Ficha Técnica</a>
+                <button class="add-to-cart-btn" data-name="Clavos de Acero (Paquete)" data-price="8" data-image="clavos.jpg">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <p>🎨 Pintura Acrílica (Galón) - <strong>S/. 25.00</strong></p>
+                <a href="pintura.jpg" target="_blank">📄 Ficha Técnica</a>
+                <button class="add-to-cart-btn" data-name="Pintura Acrílica (Galón)" data-price="25" data-image="pintura.jpg">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <p>🧴 Silicona de Sellado - <strong>S/. 18.00</strong></p>
+                <a href="sellador.jpg" target="_blank">📄 Ficha Técnica</a>
+                <button class="add-to-cart-btn" data-name="Silicona de Sellado" data-price="18" data-image="sellador.jpg">Agregar al Carrito</button>
+            </div>
+        </section>
+    </main>
+
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Tu Carrito</h2>
+            <span class="close-cart" onclick="toggleCart()">X</span>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <p class="empty-cart-message">El carrito está vacío.</p>
+        </div>
+        <div class="cart-summary">
+            <p>Total: S/. <span id="cart-total">0.00</span></p>
+            <button class="checkout-button">Proceder al Pago</button>
+        </div>
+    </aside>
+
+    <script src="javascript2.js"></script>
+</body>
+</html>
